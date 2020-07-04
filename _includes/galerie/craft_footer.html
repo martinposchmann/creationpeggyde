@@ -1,0 +1,20 @@
+<footer id="footer">
+  <div id="footer-nav">
+    <img id="footer-line" src="../bilder/galerie/linie-s2.gif">
+    <ul id="footer-right">
+      <li data-kat="3dbilder"><a href="../galerie/craft_3d_bilder_tiere.html">3D-Bilder</a></li>
+      <li data-kat="shabbychic"><a href="../galerie/craft_cafeemotion.html">Shabby chic</a></li>
+      <li data-kat="tischdeko"><a href="../galerie/craft_tischdeko_weihnachten.html">Tischdeko</a></li>
+      <li data-kat="kerzen"><a href="../galerie/craft_kerzen1.html">Kerzengestaltung</a></li>
+      <li data-kat="ostern"><a href="../galerie/craft_ostereier.html">Ostern</a></li>
+      <li data-kat="herbst"><a href="../galerie/craft_herbstkraenze.html">Herbst</a></li>
+      <li data-kat="weihnachten"><a href="../galerie/craft_adventskraenze.html">Weihnachten</a></li>
+    </ul>
+  </div>
+  {% include galerie/footer_copyright.html %}
+</footer>
+
+<script>
+$('#footer li[data-kat="{{ page.katname }}"]').addClass('active');
+$('#navi li[data-menu-item="{{ page.menuitem }}"]').addClass('active');
+</script>
